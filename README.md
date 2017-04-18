@@ -1,4 +1,4 @@
-# Deprecated
+# Deprecation notice
 
 This package has now been merged into
 [clue/socks-react](https://github.com/clue/php-socks-react) and only exists for BC
