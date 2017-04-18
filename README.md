@@ -1,4 +1,35 @@
-# clue/socks-server [![Build Status](https://travis-ci.org/clue/php-socks-server.svg?branch=master)](https://travis-ci.org/clue/php-socks-server)
+# Deprecated
+
+This package has now been merged into
+[clue/socks-react](https://github.com/clue/php-socks-react) and only exists for BC
+reasons.
+
+```bash
+$ composer require clue/socks-react
+```
+
+If you've previously used this package to build a SOCKS server,
+upgrading should take no longer than a few minutes.
+All classes have been merged as-is from the latest `v0.7.0` release with no
+other changes, so you can simply update your code to use the updated namespace
+like this:
+
+```php
+// old from clue/socks-server
+$server = new Clue\React\Socks\Server\Server($loop, $socket);
+
+// new
+$server = new Clue\React\Socks\Server($loop, $socket);
+```
+
+See https://github.com/clue/php-socks-react for more details.
+
+The below documentation applies to the last release of this package.
+Further development will take place in the updated
+[clue/socks-react](https://github.com/clue/php-socks-react), so you're highly
+recommended to upgrade as soon as possible.
+
+# Legacy clue/socks-server [![Build Status](https://travis-ci.org/clue/php-socks-server.svg?branch=master)](https://travis-ci.org/clue/php-socks-server)
 
 Async SOCKS proxy server (SOCKS4, SOCKS4a and SOCKS5), built on top of React PHP.
 
